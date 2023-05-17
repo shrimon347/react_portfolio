@@ -1,0 +1,108 @@
+.about__container {
+    grid-template-columns: repeat( 2,1fr);
+    align-items: center;
+    column-gap: 4rem;
+}
+
+.about__img{
+    width: 350px;
+    border-radius: 1.5rem;
+    justify-self: center;
+    box-shadow: inset 0 0 0 9px rgb(255 255 255 / 50%);
+    /* animation: profile__animates 8s ease-in-out infinite 1s; */
+    background-size: cover;
+    
+}
+@keyframes profile__animates {
+    0% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+    50% {
+        border-radius: 30% 60% 70% 40%/50% 60% 30% 60%;
+    }
+    100% {
+        border-radius: 60% 40% 30% 70%/60% 30% 70% 40%;
+    }
+}
+.about__info {
+    grid-template-columns: repeat(3,140px);
+    gap: 0.5rem;
+    margin-bottom: var(--mb-2);
+}
+
+.about__box {
+    background-color: var(--container-color);
+    border: 1px solid  rgba(0, 0, 0, 0.1);
+    border-radius: 0.75rem;
+    text-align: center;
+    padding: 1rem 1.25rem;
+}
+
+.about__icon {
+    font-size: 1.5rem;
+    color: var(--tittle-color);
+    margin-bottom: var(--mb-0-5);
+}
+.about__title{
+    font-size: var(--small-font-size);
+    font-weight: var(--font-medium);
+}
+
+.about__subtitle {
+     font-size: var(--tiny-font-size);
+}
+
+.about__description {
+    padding: 0 4rem 0 0;
+    margin-bottom: var(--mb-2);
+}
+
+
+
+/*=============== BREAKPOINTS ===============*/
+/* For large devices */
+@media screen and (max-width: 992px) {
+    .about__container {
+        grid-template-columns: 1fr;
+        row-gap: 2.5rem;
+    }
+
+    .about__img {
+        width: 220px;
+    }
+
+    .about__box {
+        padding: 0.75rem 0.5rem;
+    }
+
+    .about__data {
+        text-align: center;
+    }
+    .about__info {
+        justify-content: center;
+    }
+    .about__description {
+        padding: 0 5rem;
+        margin-bottom: 2rem;
+    }
+  }
+  
+  /* For medium devices */
+
+  @media screen and (max-width: 576px) {
+    .about__info {
+        grid-template-columns: repeat(3,1fr);
+    }
+    .about__description {
+        padding: 0;
+    }
+  }
+  
+  /* For small devices */
+  @media screen and (max-width: 350px) {
+
+    .about__info {
+        grid-template-columns: repeat(2,1fr);
+    }
+  }
+  
