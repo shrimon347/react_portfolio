@@ -18,11 +18,11 @@ const Footer = () => {
 
         <div className="footer__social">
 
-        <a href="" className="footer__social-link" target="_blank"> <i class="bx bxl-linkedin"></i></a>
-        <a href="" className="footer__social-link" target="_blank"> <i class="bx bxl-facebook"></i></a>
-        <a href="" className="footer__social-link" target="_blank"><i class="bx bxl-instagram-alt"></i></a>
-        <a href="" className="footer__social-link" target="_blank"><i class="bx bxl-behance"></i></a>
-        <a href="" className="footer__social-link" target="_blank"><i class="bx bxl-github"></i></a>
+        <a href="#r" className="footer__social-link" target="_blank"> <i className="bx bxl-linkedin"></i></a>
+        <a href="#r" className="footer__social-link" target="_blank"> <i className="bx bxl-facebook"></i></a>
+        <a href="#r" className="footer__social-link" target="_blank"><i className="bx bxl-instagram-alt"></i></a>
+        <a href="#r" className="footer__social-link" target="_blank"><i className="bx bxl-behance"></i></a>
+        <a href="#r" className="footer__social-link" target="_blank"><i className="bx bxl-github"></i></a>
         </div>
     </div>
 
